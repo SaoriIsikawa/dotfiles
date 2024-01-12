@@ -211,6 +211,7 @@ function path(){
     IFS=$old
 }
 
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/lib"
 
 # ls
 alias l='ls -CF'
@@ -299,9 +300,9 @@ alias vim='/usr/bin/vim'
 alias vi='/usr/bin/vim'
 #alias echo='/home/saori/bin/awk -f /home/saori/bin/echo.awk'
 #alias sudo='sudo '
-alias rm='rm -Iv'
-alias mv='mv -iv'
-alias ln='ln -iv'
+alias rm='rm -I'
+alias mv='mv -i'
+alias ln='ln -i'
 alias free='free -h'
 
 
