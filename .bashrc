@@ -137,8 +137,8 @@ shopt -s histappend
 
 export PS1='\[\e[38;5;66m\]\u\[\e[0m\]@\[\e[38;5;96m\]\h \[\e[38;5;65m\]\w \[\e[0m\](\[\e[38;5;178m\]$?\[\e[0m\]) \$ '
 
-#export CC=clang
-#export CXX=clang++
+export CC=clang
+export CXX=clang++
 
 
 #环境变量
@@ -243,7 +243,7 @@ alias bc='bc -ql'
 alias cp='rsync --archive --compress -hh --info=stats1,progress2 --modify-window=1'
 #alias mv='rsync --archive --compress -hh --info=stats1,progress2 --modify-window=1 --remove-source-files'
 alias wipe='shred -v -z --iterations=1 --random-source=/dev/urandom'
-alias date='date +"%+Y/%-m/%d %k:%M"'
+alias date='date +"%+Y/%-m/%d %k:%M:%S"'
 alias lsblk='lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL -e7'
 alias astyle='astyle -A1 -p -s4 -xC80 -c'
 #alias pcc='pcc -Wall -Wpedantic -Wextra'
