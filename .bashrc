@@ -137,8 +137,6 @@ shopt -s histappend
 
 export PS1='\[\e[38;5;66m\]\u\[\e[0m\]@\[\e[38;5;96m\]\h \[\e[38;5;65m\]\w \[\e[0m\](\[\e[38;5;178m\]$?\[\e[0m\]) \$ '
 
-export CC=clang
-export CXX=clang++
 
 
 #环境变量
@@ -242,13 +240,12 @@ alias e='exit'
 alias bc='bc -ql'
 alias cp='rsync --archive --compress -hh --info=stats1,progress2 --modify-window=1'
 #alias mv='rsync --archive --compress -hh --info=stats1,progress2 --modify-window=1 --remove-source-files'
-alias wipe='shred -v -z --iterations=1 --random-source=/dev/urandom'
+#alias wipe='shred -v -z --iterations=1 --random-source=/dev/urandom'
 alias date='date +"%+Y/%-m/%d %k:%M:%S"'
 alias lsblk='lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL -e7'
 alias astyle='astyle -A1 -p -s4 -xC80 -c'
 #alias pcc='pcc -Wall -Wpedantic -Wextra'
 #alias gcc='gcc -Wall -Wpedantic -Wextra'
-alias CFLAGS='-Wall -Wpedantic -Wextra'
 #alias L='|$PAGER'
 #alias N='>/dev/null 2>&1'
 #alias N1='>/dev/null'
@@ -279,7 +276,7 @@ alias gst='git stash'
 alias gsl='git stash list'
 alias gsu='git stash -u'
 alias gsp='git stash pop'
-alias lftp='lftp -u mike,123456 192.168.31.2'
+alias lftp='lftp -u mike,123456 192.168.32.169'
 
 # gpg
 alias gpglk='gpg --list-keys --keyid-format=long'
