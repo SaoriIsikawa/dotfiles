@@ -14,7 +14,6 @@
 	ff = false
 [pull]
 	ff = only
-[http "https://github.com"]
-	proxy = http://127.0.0.1:7890
-[http "https://github.com"]
-	sslVerify = false
+[http]
+	postBuffer = 524288000
+    maxRequests = 3
